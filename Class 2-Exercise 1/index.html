@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            /* greater than 768px */
+        .column {
+            float: left;
+        }
+
+        .sidebar {
+            width: 25%;
+        }
+
+        .main-content {
+            width: 50%;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+        /* 600px and below */
+        @media screen and (max-width: 600px) {
+            .column, 
+            .sidebar, 
+        
+            .main-content {
+                float: none;
+                width: 100%;
+                color:blue
+            }
+
+            .sidebar{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="column sidebar">
+            <h2>Side bar 1</h2>
+            <p>This is the content for the first sidebar.</p>
+        </div>
+    
+        <div class="column main-content">
+            <h2>Media Querie Exercise</h2>
+            <p>This is an example.</p>
+        </div>
+    
+        <div class="column sidebar">
+            <h2>Sidebar 2</h2>
+            <p>This is the content for the second sidebar</p>
+         </div>
+    </div>
+</body>
+</html>
